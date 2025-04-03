@@ -25,6 +25,14 @@ The blogs themselves vary between short miscellaneous findings, progress updates
 
 - [2025/03/10 Project Motivations](project_motivations.md)
 
+## Weekly Blogs
+
+- [Week 1](blog/week_1.md)
+- [Week 2](blog/week_2.md)
+- [Week 3](blog/week_3.md)
+- [Week 4](blog/week_4.md)
+- [Week 5](blog/week_5.md)
+
 ## Miscellaneous
 
 - [2025/03/11 Bundling & ONNX Runtime Web Testing](onnx_and_bundling_test.md)
