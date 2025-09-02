@@ -407,35 +407,52 @@ function ModelTesting() {
 
 
     // Summarisation Model Times.
-    // Estimate upload time
-    let startTime = performance.now();
 
-    for (let i = 0; i < 25000; i++) {
-      let sum = 0
-      for (let j = 0; j < 20000; j++) {
-        sum += Math.random() * Math.random();
+    let model1 = [22000, 36000, "Xenova/bart-large-cnn"];
+    let model2 = [16700, 26700, "Xenova/distilbart-cnn-6-6"];
+    let model3 = [18500, 28800, "Xenova/distilbart-cnn-12-6"];
+    let model4 = [28600, 27000, "Xenova/nllb-200-distilled-600M"];
+
+    let allModels = [model1, model2, model3, model4];
+    let sum;
+
+    for (let m = 0; m < allModels.length; m++) {
+
+      const model = allModels[m];
+
+      console.log(model[2] + ":");
+
+      // Estimate upload time
+      let startTime = performance.now();
+
+      sum = 0;
+      for (let i = 0; i < model[0]; i++) {
+        for (let j = 0; j < model[0]; j++) {
+          sum += Math.random() * Math.random();
+        }
       }
-    }
 
-    let endTime = performance.now();
-    let totalTime = parseFloat(((endTime - startTime) / 1000).toFixed(2));
+      let endTime = performance.now();
+      let totalTime = parseFloat(((endTime - startTime) / 1000).toFixed(2));
 
-    console.log("Upload Time: " + totalTime);
+      console.log("Upload Time: " + totalTime);
 
-    // Estimate upload time performance
-    startTime = performance.now();
+      // Estimate upload time performance
+      startTime = performance.now();
 
-    for (let i = 0; i < 40000; i++) {
-      let sum = 0
-      for (let j = 0; j < 34000; j++) {
-        sum += Math.random() * Math.random();
+      sum = 0
+      for (let i = 0; i < model[1]; i++) {
+        for (let j = 0; j < model[1]; j++) {
+          sum += Math.random() * Math.random();
+        }
       }
+
+      endTime = performance.now();
+      totalTime = parseFloat(((endTime - startTime) / 1000).toFixed(2));
+
+      console.log("Generation Time: " + totalTime);
     }
-
-    endTime = performance.now();
-    totalTime = parseFloat(((endTime - startTime) / 1000).toFixed(2));
-
-    console.log("Generation Time: " + totalTime);
+    console.log("Completed. " + sum);
   }
 
   // Change the active processor.

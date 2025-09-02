@@ -142,29 +142,31 @@ let model_file_urls = [
     ["https://huggingface.co/Xenova/bart-large-cnn/resolve/main/onnx/decoder_model_merged_quantized.onnx","summarization/Xenova/bart-large-cnn/decoder_model_merged_quantized.onnx"],
     ["https://huggingface.co/Xenova/bart-large-cnn/resolve/main/onnx/encoder_model_quantized.onnx", "summarization/Xenova/bart-large-cnn/encoder_model_quantized.onnx"],
   ],
-  // [ // Xenova/distilbart-cnn-6-6
-  //   {
-  //     modelName: "Xenova/distilbart-cnn-6-6",
-  //     path: "summarization/Xenova/distilbart-cnn-6-6",
-  //     task: "summarization"
-  //   },
-  //   ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/config.json", "summarization/Xenova/distilbart-cnn-6-6/config.json"],
-  //   ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/generation_config.json", "summarization/Xenova/distilbart-cnn-6-6/generation_config.json"],
-  //   ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/tokenizer.json", "summarization/Xenova/distilbart-cnn-6-6/tokenizer.json"],
-  //   ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/tokenizer_config.json", "summarization/Xenova/distilbart-cnn-6-6/tokenizer_config.json"],
-  //   ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/onnx/decoder_model_merged_quantized.onnx", "summarization/Xenova/distilbart-cnn-6-6/decoder_model_merged_quantized.onnx"],
-  //   ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/onnx/encoder_model_quantized.onnx", "summarization/Xenova/distilbart-cnn-6-6/encoder_model_quantized.onnx"],
-  // ],
-  [ // Xenova/distilbert-base-uncased-distilled-squad
+  [ // Xenova/distilbart-cnn-6-6
     {
-      modelName: "Xenova/distilbert-base-uncased-distilled-squad",
-      path: "question_answer/Xenova/distilbert-base-uncased-distilled-squad",
-      task: "question-answering"
+      modelName: "Xenova/distilbart-cnn-6-6",
+      path: "summarization/Xenova/distilbart-cnn-6-6",
+      task: "summarization"
     },
-    ["https://huggingface.co/Xenova/distilbert-base-uncased-distilled-squad/resolve/main/config.json", "question_answer/Xenova/distilbert-base-uncased-distilled-squad/config.json"],
-    ["https://huggingface.co/Xenova/distilbert-base-uncased-distilled-squad/resolve/main/onnx/model_quantized.onnx", "question_answer/Xenova/distilbert-base-uncased-distilled-squad/model_quantized.onnx"],
-    ["https://huggingface.co/Xenova/distilbert-base-uncased-distilled-squad/resolve/main/tokenizer.json", "question_answer/Xenova/distilbert-base-uncased-distilled-squad/tokenizer.json"],
-    ["https://huggingface.co/Xenova/distilbert-base-uncased-distilled-squad/resolve/main/tokenizer_config.json", "question_answer/Xenova/distilbert-base-uncased-distilled-squad/tokenizer_config.json"]
+    ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/config.json", "summarization/Xenova/distilbart-cnn-6-6/config.json"],
+    ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/generation_config.json", "summarization/Xenova/distilbart-cnn-6-6/generation_config.json"],
+    ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/tokenizer.json", "summarization/Xenova/distilbart-cnn-6-6/tokenizer.json"],
+    ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/tokenizer_config.json", "summarization/Xenova/distilbart-cnn-6-6/tokenizer_config.json"],
+    ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/onnx/decoder_model_merged_quantized.onnx", "summarization/Xenova/distilbart-cnn-6-6/decoder_model_merged_quantized.onnx"],
+    ["https://huggingface.co/Xenova/distilbart-cnn-6-6/resolve/main/onnx/encoder_model_quantized.onnx", "summarization/Xenova/distilbart-cnn-6-6/encoder_model_quantized.onnx"],
+  ],
+  [ // Xenova/distilbart-cnn-12-6
+    {
+      modelName: "Xenova/distilbart-cnn-12-6",
+      path: "summarization/Xenova/distilbart-cnn-12-6",
+      task: "summarization"
+    },
+    ["https://huggingface.co/Xenova/distilbart-cnn-12-6/resolve/main/config.json", "summarization/Xenova/distilbart-cnn-12-6/config.json"],
+    ["https://huggingface.co/Xenova/distilbart-cnn-12-6/resolve/main/generation_config.json", "summarization/Xenova/distilbart-cnn-12-6/generation_config.json"],
+    ["https://huggingface.co/Xenova/distilbart-cnn-12-6/resolve/main/tokenizer.json", "summarization/Xenova/distilbart-cnn-12-6/tokenizer.json"],
+    ["https://huggingface.co/Xenova/distilbart-cnn-12-6/resolve/main/tokenizer_config.json", "summarization/Xenova/distilbart-cnn-12-6/tokenizer_config.json"],
+    ["https://huggingface.co/Xenova/distilbart-cnn-12-6/resolve/main/onnx/decoder_model_merged_quantized.onnx", "summarization/Xenova/distilbart-cnn-12-6/decoder_model_merged_quantized.onnx"],
+    ["https://huggingface.co/Xenova/distilbart-cnn-12-6/resolve/main/onnx/encoder_model_quantized.onnx", "summarization/Xenova/distilbart-cnn-12-6/encoder_model_quantized.onnx"],
   ],
   [ // translation/Xenova/nllb-200-distilled-600M
     {

@@ -26,8 +26,8 @@ export const modelBenchmarks = {
             upload_time: 1,
             infer_time: 1,
             quality: 7,
-            estimate_upload_time_run_counts: [25000, 20000],
-            estimate_generate_time_run_counts: [40000, 34000],
+            estimate_upload_time_run: 22000,
+            estimate_generate_time_run: 36000,
         },{
             name: "Xenova/distilbart-cnn-6-6",
             file_size: 0.272,
