@@ -239,6 +239,12 @@ function ModelBenchmarking() {
     document.getElementById("modelInputLabel").setAttribute("disabled","disabled");
     document.getElementById("benchmarkButton").disabled = true;
     document.getElementById("clearButton").disabled = true;
+    document.getElementById("advancedOptionsMenuButton").disabled = true;
+    document.getElementById("redoTutorial").disabled = true;
+
+    const copyButtons = document.querySelectorAll('[data-group="copy-buttons"]');
+    copyButtons.forEach(btn => btn.disabled = true);
+    
 
     for (let table of tables) {
 
@@ -414,6 +420,9 @@ function ModelBenchmarking() {
     document.getElementById("modelInputLabel").removeAttribute("disabled");
     document.getElementById("benchmarkButton").disabled = false;
     document.getElementById("clearButton").disabled = false;
+    document.getElementById("advancedOptionsMenuButton").disabled = false;
+    document.getElementById("redoTutorial").disabled = false;
+    copyButtons.forEach(btn => btn.disabled = false);
   };
 
   const clearModels = () => {
@@ -716,6 +725,7 @@ function ModelBenchmarking() {
                   </tbody>
                 </table>
                 <button 
+                  data-group="copy-buttons"
                   class={styles.inputButton + " " + styles.copyButton} 
                   onClick={() => copyTable(`${type}-table`)} 
                   classList={{ hidden: selectedModels().length == 0}}
